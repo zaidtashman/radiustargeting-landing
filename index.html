@@ -5,83 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Primary SEO Tags -->
-    <title>Radius Targeting: The Ultimate Guide to Geo-Fencing & Proximity Ads</title>
-    <meta name="description" content="Master Radius Targeting for Google & Meta Ads. Learn how AI-driven micro-pockets, geo-fencing, and proximity targeting reduce ad waste and boost ROAS.">
-    <meta name="keywords" content="Radius Targeting, Geo-fencing, Proximity Targeting, Google Ads Location Targeting, Meta Ads Radius, Hyper-local advertising, Micro-clustering">
+    <title>Radius Targeting: The Executive Guide To Geospatial Advertising Strategy</title>
+    <meta name="description" content="The definitive strategic guide to Radius Targeting. Eliminate fiscal leakage in ad spend, master micro-clustering, and optimize ROAS through precision geo-fencing.">
+    <meta name="keywords" content="Radius Targeting, Geospatial Advertising, Proximity Targeting, Google Ads Location Strategy, Meta Ads Radius, Micro-clustering, Ad Spend Efficiency, Hyper-local ads">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://radiustargeting.com">
+    <meta name="author" content="RadiusTargeting.com">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://radiustargeting.com">
-    <meta property="og:title" content="What is Radius Targeting? The Ultimate Guide to Geo-Fencing">
-    <meta property="og:description" content="Stop targeting entire zip codes. Learn how to use radius targeting to reach high-intent customers in specific geographic pockets.">
-    <meta property="og:image" content="https://radiustargeting.com/og-image.jpg">
+    <meta property="og:title" content="Radius Targeting: The Executive Guide to Geo-Fencing">
+    <meta property="og:description" content="Move beyond broad zip codes. Learn the sophisticated art of radius targeting to capture high-intent pockets and maximize capital efficiency.">
+    <meta property="og:image" content="https://radiustargeting.com/og-guide-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://radiustargeting.com">
-    <meta property="twitter:title" content="What is Radius Targeting? The Ultimate Guide to Geo-Fencing">
-    <meta property="twitter:description" content="Stop targeting entire zip codes. Learn how to use radius targeting to reach high-intent customers in specific geographic pockets.">
-
-    <!-- Favicon & Theme -->
-    <link rel="icon" type="image/svg+xml" href="https://radiustarget.com/static/landing-assets/images/logo/logo.svg">
+    <meta property="twitter:title" content="Radius Targeting: The Executive Guide to Geo-Fencing">
+    <meta property="twitter:description" content="Master hyper-local ads. Stop wasting spend on dead zones.">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- JSON-LD Schema for SEO & AI Crawlers -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "What is Radius Targeting?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Radius Targeting, also known as proximity targeting or geo-fencing, is a digital advertising capability that allows marketers to serve ads only to users located within a specific radial distance from a central coordinate, ignoring broad administrative boundaries like zip codes."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Why is Radius Targeting better than Zip Code targeting?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Zip Code targeting often includes 'dead zones' such as industrial parks, lakes, or non-residential areas. Radius targeting allows for micro-clustering, focusing ad spend only on high-density residential pockets that match a specific demographic profile."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Can I use Radius Targeting on Google Ads?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, Google Ads offers 'Location Options' where you can select 'Radius' to target a specific distance (miles or km) around a set of coordinates or a specific address."
-        }
-      }]
-    }
-    </script>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/svg+xml" href="static/images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="static/images/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="static/images/favicon.ico">
 
+    <!-- Tailwind Configuration -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Merriweather', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
                     },
                     colors: {
                         brand: {
-                            dark: '#312E81',  // Indigo 900
-                            main: '#4F46E5',  // Indigo 600
-                            light: '#E0E7FF', // Indigo 100
-                            accent: '#14B8A6' // Teal 500
+                            dark: '#0F172A',  // Slate 900
+                            main: '#334155',  // Slate 700
+                            accent: '#0F766E', // Teal 700
+                            gold: '#B45309',   // Amber 700 (for premium accents)
+                            surface: '#F8FAFC' // Slate 50
                         }
-                    }
+                    },
+                    typography: (theme) => ({
+                        DEFAULT: {
+                            css: {
+                                color: theme('colors.slate.600'),
+                                h1: { fontFamily: theme('fontFamily.serif') },
+                                h2: { fontFamily: theme('fontFamily.serif') },
+                                h3: { fontFamily: theme('fontFamily.serif') },
+                            },
+                        },
+                    }),
                 }
             }
         }
@@ -89,275 +74,589 @@
 
     <style>
         .pattern-grid {
-            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
-            background-size: 10px 10px;
+            background-image: radial-gradient(#94a3b8 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        html { scroll-behavior: smooth; }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
         }
     </style>
+
+    <!-- SCHEMA -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Radius Targeting: The Executive Guide to Geospatial Strategy",
+        "image": "https://radiustargeting.com/og-image.jpg",
+        "author": {
+          "@type": "Organization",
+          "name": "RadiusTargeting.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "RadiusTargeting.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://radiustarget.com/logo.png"
+            }
+        },
+        "datePublished": "2024-01-15",
+        "dateModified": "2025-12-18",
+        "description": "A comprehensive guide to understanding and implementing radius targeting in digital advertising."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "What is Radius Targeting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Radius Targeting is a precision digital advertising capability that allows marketers to serve ads only to users located within a specific radial distance from a central coordinate, enabling superior capital efficiency."
+          }
+        }]
+      }
+    ]
+    </script>
 </head>
 <body class="font-sans text-slate-700 antialiased bg-slate-50">
 
     <!-- Header / Nav -->
-    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto px-6 h-16 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <div class="w-8 h-8 bg-brand-main rounded-lg flex items-center justify-center text-white">
-                    <i class="fa-solid fa-bullseye"></i>
+    <header class="bg-white/90 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-brand-dark rounded-lg flex items-center justify-center text-white shadow-lg">
+                    <i class="fa-solid fa-crosshairs"></i>
                 </div>
-                <div class="font-bold text-xl tracking-tight text-slate-900 font-serif">
+                <div class="font-bold text-2xl tracking-tight text-slate-900 font-serif">
                     RadiusTargeting<span class="text-brand-accent">.com</span>
                 </div>
             </div>
-            <!-- Subtle link to the tool -->
-            <a href="https://radiustarget.com" title="Visit RadiusTarget App" class="text-xs sm:text-sm font-medium text-slate-500 hover:text-brand-main transition flex items-center gap-1">
-                <span>Sponsored by <strong>RadiusTarget</strong></span>
-                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            <a href="https://radiustarget.com" class="hidden md:flex items-center gap-3 group">
+                <span class="text-sm font-medium text-slate-500 group-hover:text-brand-dark transition">Strategic Tools by <strong class="text-brand-dark">RadiusTarget</strong></span>
+                <span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center group-hover:bg-brand-accent group-hover:text-white transition duration-300">
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </span>
             </a>
         </div>
     </header>
 
-    <!-- Hero / Title -->
-    <article class="max-w-4xl mx-auto px-6 pt-16 pb-8">
-        <div class="text-center mb-10">
-            <span class="inline-block bg-brand-light text-brand-dark px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide mb-4">
-                The Marketer's Guide to Geo-Fencing
-            </span>
-            <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight font-serif">
-                What is Radius Targeting?
+    <!-- Hero Section -->
+    <article class="relative bg-white pb-20 pt-24 overflow-hidden border-b border-slate-100">
+        <!-- Abstract BG Elements -->
+        <div class="absolute inset-0 pattern-grid opacity-10 pointer-events-none"></div>
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-teal-50 rounded-full blur-3xl opacity-50 mix-blend-multiply filter pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-indigo-50 rounded-full blur-3xl opacity-50 mix-blend-multiply filter pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 bg-slate-900 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-8 shadow-xl shadow-slate-200">
+                <i class="fa-solid fa-layer-group text-brand-accent"></i> The 2025 Executive Guide
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold text-slate-900 mb-8 leading-[1.1] font-serif tracking-tight">
+                The Strategic Imperative of <br class="hidden md:block"> <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-dark to-brand-accent">Radius Targeting</span>
             </h1>
-            <p class="text-xl md:text-2xl text-slate-500 max-w-2xl mx-auto leading-relaxed font-light">
-                From basic geo-fencing to <strong>AI-driven micro-pockets</strong>. Learn how to stop paying for empty space and start targeting high-intent neighborhoods.
+            <p class="text-xl md:text-2xl text-slate-500 max-w-3xl mx-auto leading-relaxed font-light mb-12">
+                Modern advertising demands precision, not just reach. Move beyond archaic Zip Code methodologies and learn to deploy <strong>micro-clustering strategies</strong> that eliminate fiscal leakage and capture high-intent pockets.
             </p>
         </div>
-        
-        <!-- Hero Visual -->
-        <div class="relative w-full h-64 md:h-96 bg-brand-dark rounded-2xl overflow-hidden shadow-2xl flex items-center justify-center mb-12" aria-label="Comparison between zip code targeting and optimized radius pockets">
-            <!-- Background Map Grid -->
-            <div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px); background-size: 40px 40px;"></div>
-            
-            <!-- The Concept Visualization -->
-            <div class="relative z-10 w-full max-w-2xl px-4 flex justify-between items-center gap-4 md:gap-12">
-                
-                <!-- Left: The Old Way -->
-                <div class="text-center opacity-50 scale-90">
-                    <div class="w-32 h-32 border-2 border-dashed border-white/50 rounded-lg mx-auto mb-4 flex items-center justify-center bg-white/5">
-                        <span class="text-white/50 font-bold">Zip Code</span>
-                    </div>
-                    <p class="text-white text-sm">Wasted Budget</p>
-                </div>
 
-                <!-- Arrow -->
-                <div class="text-brand-accent text-2xl"><i class="fa-solid fa-arrow-right"></i></div>
-
-                <!-- Right: The New Way -->
-                <div class="text-center">
-                    <div class="w-64 h-48 relative mx-auto mb-4">
-                        <!-- Cluster 1 -->
-                        <div class="absolute top-0 left-4 w-20 h-20 bg-brand-accent/20 border-2 border-brand-accent rounded-full flex items-center justify-center animate-pulse">
-                            <i class="fa-solid fa-user-group text-brand-accent"></i>
-                        </div>
-                        <!-- Cluster 2 -->
-                        <div class="absolute bottom-4 right-8 w-24 h-24 bg-brand-accent/20 border-2 border-brand-accent rounded-full flex items-center justify-center animate-pulse" style="animation-delay: 0.5s">
-                            <i class="fa-solid fa-user-group text-brand-accent"></i>
-                        </div>
-                        <!-- Cluster 3 -->
-                        <div class="absolute bottom-0 left-0 w-16 h-16 bg-brand-accent/20 border-2 border-brand-accent rounded-full flex items-center justify-center animate-pulse" style="animation-delay: 1s">
-                            <i class="fa-solid fa-user-group text-brand-accent"></i>
-                        </div>
-                    </div>
-                    <p class="text-white font-bold text-lg">Optimized Pockets</p>
-                </div>
-            </div>
+        <!-- TOC Navigation -->
+        <div class="max-w-5xl mx-auto px-6">
+            <nav class="glass-panel border border-white/50 rounded-2xl shadow-xl shadow-slate-200/50 p-8 relative z-20">
+                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6 border-b border-slate-100 pb-2">Navigation</h3>
+                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 text-base font-medium text-slate-700">
+                    <li><a href="#definition" class="hover:text-brand-accent hover:translate-x-1 transition-all flex items-center gap-3"><i class="fa-solid fa-angle-right text-brand-accent/50"></i> The Concept Defined</a></li>
+                    <li><a href="#benefits" class="hover:text-brand-accent hover:translate-x-1 transition-all flex items-center gap-3"><i class="fa-solid fa-angle-right text-brand-accent/50"></i> Core Strategic Benefits</a></li>
+                    <li><a href="#prospects" class="hover:text-brand-accent hover:translate-x-1 transition-all flex items-center gap-3"><i class="fa-solid fa-angle-right text-brand-accent/50"></i> Micro-Clustering Strategy</a></li>
+                    <li><a href="#location" class="hover:text-brand-accent hover:translate-x-1 transition-all flex items-center gap-3"><i class="fa-solid fa-angle-right text-brand-accent/50"></i> Operational Geography</a></li>
+                    <li><a href="#competitors" class="hover:text-brand-accent hover:translate-x-1 transition-all flex items-center gap-3"><i class="fa-solid fa-angle-right text-brand-accent/50"></i> Competitive Conquesting</a></li>
+                    <li><a href="#use-cases" class="hover:text-brand-accent hover:translate-x-1 transition-all flex items-center gap-3"><i class="fa-solid fa-angle-right text-brand-accent/50"></i> Industry Applications</a></li>
+                </ul>
+            </nav>
         </div>
     </article>
 
     <!-- Main Content -->
-    <main class="max-w-3xl mx-auto px-6 pb-20">
-        
+    <main class="max-w-5xl mx-auto px-6 py-24 space-y-32">
+
         <!-- Section 1: Definition -->
-        <section class="prose prose-lg prose-slate max-w-none text-gray-700">
-            <h2 class="text-3xl font-bold text-slate-900 mb-6 font-serif">Defining the Concept</h2>
-            <p class="mb-6 leading-relaxed first-letter:text-5xl first-letter:font-bold first-letter:text-brand-main first-letter:float-left first-letter:mr-3">
-                <strong>Radius Targeting</strong> (often referred to as proximity targeting or geo-fencing) is a precision advertising strategy. It allows marketers to serve digital ads strictly to users located within a defined radial distance from a specific coordinate.
-            </p>
-            <p class="mb-6 leading-relaxed">
-                Unlike broad location targeting—which relies on arbitrary administrative lines like Cities or Zip Codes—radius targeting focuses purely on <strong>physical proximity</strong>.
-            </p>
-
-            <div class="bg-white border border-gray-200 rounded-xl p-6 my-8 shadow-sm">
-                <h3 class="text-lg font-bold text-slate-900 mb-4">How it works technically</h3>
-                <ul class="space-y-4">
-                    <li class="flex items-start gap-3">
-                        <div class="mt-1 w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 flex-shrink-0 text-xs"><i class="fa-solid fa-1"></i></div>
-                        <p class="text-sm"><strong>The Center Point:</strong> You define a precise latitude and longitude coordinate.</p>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <div class="mt-1 w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 flex-shrink-0 text-xs"><i class="fa-solid fa-2"></i></div>
-                        <p class="text-sm"><strong>The Perimeter:</strong> You set a distance (e.g., 1 mile). The ad platform draws a perfect circle around that point.</p>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <div class="mt-1 w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 flex-shrink-0 text-xs"><i class="fa-solid fa-3"></i></div>
-                        <p class="text-sm"><strong>The Fence:</strong> GPS signals inside the circle trigger the ad. Signals outside are excluded.</p>
-                    </li>
-                </ul>
+        <section id="definition" class="scroll-mt-32 grid md:grid-cols-12 gap-12">
+            <div class="md:col-span-4">
+                <h2 class="text-4xl font-bold text-slate-900 font-serif leading-tight">Defining Geospatial Precision</h2>
+                <div class="w-12 h-1 bg-brand-accent mt-6"></div>
             </div>
+            
+            <div class="md:col-span-8 prose prose-lg prose-slate text-slate-600">
+                <p class="leading-loose">
+                    <strong>Radius Targeting</strong> (frequently referred to in technical circles as proximity targeting, geo-fencing, or pin-drop targeting) represents the pinnacle of location-based advertising precision. It empowers sophisticated advertisers to restrict ad delivery strictly to a defined radial distance around a specific set of geospatial coordinates (Latitude/Longitude), rather than relying on pre-defined administrative regions.
+                </p>
+                <p class="leading-loose">
+                    Unlike broad, blunt targeting options—such as "City," "DMA," or "Zip Code"—radius targeting focuses purely on physical proximity and human movement patterns. By utilizing GPS data, advertisers can draw an invisible perimeter around a point of interest—be it a competitor's storefront, a luxury housing development, or a specific event venue—and ensure that capital is deployed only when a user enters that high-value zone.
+                </p>
+            </div>
+        </section>
 
-            <p class="mb-6">
-                This capability is available on <strong>Google Ads</strong> and <strong>Meta Ads</strong>, but manual implementation is often simplistic. The true power lies in <strong>micro-clustering</strong>.
-            </p>
-
-            <hr class="border-gray-200 my-12">
-
-            <!-- Section 2: The Problem -->
-            <h2 class="text-3xl font-bold text-slate-900 mb-6 font-serif">The "Zip Code" Trap</h2>
-            <p class="mb-6 leading-relaxed">
-                Most marketers default to Zip Code targeting. However, Zip Codes are designed for mail delivery, not marketing efficiency. A single Zip Code often contains significant "dead zones":
-            </p>
-            <ul class="list-none space-y-2 pl-0 mb-8">
-                <li class="flex items-center gap-3 text-red-600 font-medium"><i class="fa-solid fa-ban"></i> Industrial Parks & Warehouses</li>
-                <li class="flex items-center gap-3 text-red-600 font-medium"><i class="fa-solid fa-ban"></i> Lakes, State Parks, and Farmland</li>
-                <li class="flex items-center gap-3 text-red-600 font-medium"><i class="fa-solid fa-ban"></i> Low-propensity neighborhoods</li>
-            </ul>
-            <p class="font-bold text-slate-900">
-                Targeting the whole region means paying for impressions in empty spaces.
-            </p>
-
-            <!-- INFOGRAPHIC -->
-            <div class="my-16 bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden" role="img" aria-label="Infographic comparing broad targeting vs precision clusters">
-                <div class="bg-gray-100 px-6 py-3 border-b border-gray-200 flex justify-between items-center">
-                    <span class="text-xs font-bold uppercase text-gray-500">Visualization: Spend Efficiency</span>
-                    <i class="fa-solid fa-map text-gray-400"></i>
+        <!-- Section 2: Benefits -->
+        <section id="benefits" class="scroll-mt-32">
+            <h2 class="text-4xl font-bold text-slate-900 mb-12 font-serif text-center">The Strategic Advantage</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Benefit 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-lg shadow-slate-200/50 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-teal-50 text-brand-accent rounded-xl flex items-center justify-center mb-6 text-xl">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl text-slate-900 mb-4 font-serif">Elimination of Fiscal Leakage</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        The primary enemy of ROAS (Return on Ad Spend) is waste. When targeting broad regions, a significant percentage of impressions are inevitably served in "dead zones"—industrial parks, bodies of water, or non-residential sectors. Radius targeting acts as a filter, ensuring every dollar is deployed into an area where human activity and commerce actually occur.
+                    </p>
                 </div>
-                <div class="grid md:grid-cols-2">
-                    <!-- Left: Broad Targeting -->
-                    <div class="p-8 border-r border-gray-200 relative bg-red-50/30">
-                        <h3 class="font-bold text-slate-700 mb-2">Broad Targeting</h3>
-                        <p class="text-xs text-gray-500 mb-4">Ad budget is spread evenly across the map, wasting money on empty land.</p>
-                        <div class="aspect-square bg-white relative rounded border border-gray-200 overflow-hidden pattern-grid">
-                            <div class="absolute inset-4 bg-red-500/10 border border-red-300"></div>
-                            <div class="absolute top-8 left-8 text-slate-600"><i class="fa-solid fa-house"></i></div>
-                            <div class="absolute bottom-8 right-8 text-blue-300"><i class="fa-solid fa-water"></i></div>
-                            <div class="absolute top-6 right-8 text-green-600"><i class="fa-solid fa-tree"></i></div>
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <span class="bg-red-100 text-red-800 text-[10px] font-bold px-2 py-1 rounded rotate-12">100% COVERAGE (WASTEFUL)</span>
+                <!-- Benefit 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-lg shadow-slate-200/50 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center mb-6 text-xl">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl text-slate-900 mb-4 font-serif">Psychological Relevance</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Proximity is a powerful psychological trigger. Ads that dynamically reference the user's immediate environment (e.g., "We are 0.5 miles away") see drastically higher Click-Through Rates (CTR). By narrowing the scope, you increase the relevance, which signals to the user that the solution is immediate and accessible.
+                    </p>
+                </div>
+                <!-- Benefit 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-lg shadow-slate-200/50 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center mb-6 text-xl">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl text-slate-900 mb-4 font-serif">Granular Bid Architecture</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Radius targeting allows for sophisticated bid tiered strategies. You can construct a "bullseye" bid structure: bidding +50% for users within 1 mile (high conversion probability), and standard bids for users 2-5 miles away. This aligns your acquisition costs directly with the probability of conversion.
+                    </p>
+                </div>
+                <!-- Benefit 4 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-lg shadow-slate-200/50 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-rose-50 text-rose-600 rounded-xl flex items-center justify-center mb-6 text-xl">
+                        <i class="fa-solid fa-chess-knight"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl text-slate-900 mb-4 font-serif">Tactical Conquesting</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        In a competitive landscape, you often cannot target a competitor's customer list directly due to privacy regulations. However, you can target the physical space their customers occupy. By placing a tight radius around a competitor's location, you can effectively "poach" their foot traffic with compelling digital offers before they even enter the store.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Prospect Pockets -->
+        <section id="prospects" class="scroll-mt-32">
+            <div class="bg-slate-900 rounded-3xl p-10 md:p-16 text-white relative overflow-hidden shadow-2xl">
+                <div class="absolute top-0 right-0 w-96 h-96 bg-brand-accent rounded-full blur-[120px] opacity-20"></div>
+                <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-600 rounded-full blur-[120px] opacity-20"></div>
+                
+                <div class="relative z-10 grid md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-4xl font-bold mb-6 font-serif">Demographic Micro-Clustering</h2>
+                        <p class="text-lg text-slate-300 leading-relaxed mb-6">
+                            A prevailing inefficiency in modern media buying is the reliance on averaged data. When you target a Zip Code, you are targeting the <i>average</i> income or age of that area. But wealth and demographics do not distribute evenly; they cluster.
+                        </p>
+                        <p class="text-lg text-slate-300 leading-relaxed mb-8">
+                            Sophisticated radius targeting involves layering <strong>Demographic Data</strong> over <strong>Geospatial Data</strong> to identify specific neighborhoods or blocks—"pockets"—that match your ideal client profile perfectly, while excluding the surrounding noise.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 h-8 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center flex-shrink-0 mt-1"><i class="fa-solid fa-xmark"></i></div>
+                                <div>
+                                    <strong class="text-white block mb-1">The Traditional Approach</strong>
+                                    <p class="text-sm text-slate-400">Targeting Zip Code 90210. This inevitably includes rental units, apartments, and commercial zones where your high-ticket offer is irrelevant.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0 mt-1"><i class="fa-solid fa-check"></i></div>
+                                <div>
+                                    <strong class="text-white block mb-1">The Micro-Cluster Approach</strong>
+                                    <p class="text-sm text-slate-400">Identifying the 4 specific gated communities where home values exceed $5M. Dropping precision 0.5-mile radii on those exact coordinates to ensure 100% audience alignment.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Right: Precision Radius -->
-                    <div class="p-8 relative bg-teal-50/30">
-                        <h3 class="font-bold text-slate-700 mb-2">Precision Clusters</h3>
-                        <p class="text-xs text-gray-500 mb-4">Multiple small radii target ONLY the high-propensity pockets.</p>
-                        <div class="aspect-square bg-white relative rounded border border-gray-200 overflow-hidden pattern-grid">
-                            <div class="absolute top-6 left-6 w-16 h-16 bg-brand-accent/20 rounded-full border border-brand-accent"></div>
-                            <div class="absolute top-8 left-8 text-brand-dark"><i class="fa-solid fa-house"></i></div>
-                            <div class="absolute bottom-8 right-8 text-blue-200 opacity-30"><i class="fa-solid fa-water"></i></div>
-                            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-                                <span class="bg-brand-light text-brand-dark text-[10px] font-bold px-2 py-1 rounded -rotate-6 shadow-sm">ONLY HIGH VALUE</span>
-                            </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                        <div class="text-center">
+                            <h4 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">Efficiency Delta</h4>
+                            <div class="text-6xl font-bold text-white mb-2">3.5x</div>
+                            <p class="text-slate-300 mb-8">Higher Conversion Rate when targeting<br>verified demographic pockets.</p>
                         </div>
+                        <div class="h-px bg-white/10 w-full mb-8"></div>
+                        <p class="text-sm text-slate-400 italic text-center">
+                            "By treating geography as a filter for intent, we stop paying for impressions that were never going to convert."
+                        </p>
                     </div>
                 </div>
             </div>
-
-            <!-- Section 3: The Solution -->
-            <h2 class="text-3xl font-bold text-slate-900 mb-6 mt-12 font-serif">The Solution: AI-Generated Pockets</h2>
-            <p class="mb-6">
-                Advanced Radius Targeting utilizes <strong>AI analysis</strong> to generate hundreds of micro-radii to cover specific demographic pockets.
-            </p>
-            <ol class="list-decimal pl-6 space-y-4 mb-8">
-                <li><strong>Input Demographics:</strong> Define your audience (e.g., "Household Income > $100k").</li>
-                <li><strong>AI Analysis:</strong> Algorithms scan geospatial data to find high-density clusters.</li>
-                <li><strong>Pocket Generation:</strong> The system places optimized circles only over those clusters.</li>
-            </ol>
-            
-            <p class="mb-6">
-                <strong>Why humans can't do this manually:</strong> A human would need to cross-reference maps with census data and pin-drop 100+ locations per city. AI-driven tools automate this micro-segmentation instantly.
-            </p>
         </section>
 
-        <!-- FAQ Section for SEO/Voice Search -->
-        <section class="max-w-3xl mx-auto mt-16 pt-10 border-t border-gray-200">
-            <h2 class="text-2xl font-bold text-slate-900 mb-6 font-serif">Frequently Asked Questions</h2>
-            <div class="space-y-6">
+        <!-- Section 4: Operational Geography -->
+        <section id="location" class="scroll-mt-32">
+            <h2 class="text-4xl font-bold text-slate-900 mb-8 font-serif">Aligning Ads with Operational Reality</h2>
+            <p class="text-xl text-slate-600 mb-12 leading-relaxed max-w-4xl">
+                Marketing does not exist in a vacuum; it exists within the constraints of logistics and physics. Radius targeting is the only methodology that accurately reflects the <strong>operational reality</strong> of your business. Customers and service fleets operate based on drive-time and friction, not administrative lines.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-12">
                 <div>
-                    <h3 class="font-bold text-lg text-brand-dark">What is the difference between Geo-fencing and Radius Targeting?</h3>
-                    <p class="text-slate-600 mt-2 text-sm">They are often used interchangeably. However, Geo-fencing can sometimes refer to custom polygon shapes, whereas Radius Targeting specifically refers to circular zones defined by a center point and a distance.</p>
+                    <h3 class="font-bold text-2xl text-slate-900 mb-4 font-serif flex items-center gap-3">
+                        <span class="w-8 h-8 bg-brand-dark text-white rounded-full flex items-center justify-center text-sm"><i class="fa-solid fa-store"></i></span>
+                        Brick & Mortar Logic
+                    </h3>
+                    <p class="text-slate-600 leading-loose">
+                        For physical retail, convenience is the primary driver of foot traffic. Research indicates that consumers rarely travel more than 15 minutes for commodity services (dry cleaning, coffee, gyms). If your ads are reaching users 20 minutes away simply because they share a Zip Code, you are paying for "ghost impressions." Radius targeting ensures your ad spend stays within the "Convenience Threshold."
+                    </p>
                 </div>
                 <div>
-                    <h3 class="font-bold text-lg text-brand-dark">Does Radius Targeting lower CPA?</h3>
-                    <p class="text-slate-600 mt-2 text-sm">Yes. By excluding low-relevance geographic areas (like lakes or industrial zones), you reduce wasted impressions, which typically lowers your Cost Per Acquisition (CPA) and increases ROAS.</p>
+                    <h3 class="font-bold text-2xl text-slate-900 mb-4 font-serif flex items-center gap-3">
+                        <span class="w-8 h-8 bg-brand-dark text-white rounded-full flex items-center justify-center text-sm"><i class="fa-solid fa-truck-fast"></i></span>
+                        Service Fleet Economics
+                    </h3>
+                    <p class="text-slate-600 leading-loose">
+                        For service-based businesses (HVAC, Plumbing, Landscaping), travel time is a direct erosion of profit margin. A lead generated 30 miles away may look good on paper, but the opportunity cost of the travel time often renders the job unprofitable. By centering radius targeting on your dispatch warehouse, you create a "Profitability Zone," ensuring your team only services high-margin geography.
+                    </p>
                 </div>
             </div>
         </section>
+
+        <!-- Section 5: Competitor Avoidance -->
+        <section id="competitors" class="scroll-mt-32 bg-slate-50 rounded-3xl p-10 border border-slate-200">
+            <h2 class="text-4xl font-bold text-slate-900 mb-6 font-serif">The "Blue Ocean" Bidding Strategy</h2>
+            <div class="grid md:grid-cols-12 gap-12">
+                <div class="md:col-span-7 prose prose-lg prose-slate text-slate-600">
+                    <p class="leading-loose">
+                        In digital advertising auctions (Google Ads, Meta Ads), location dictates price. Areas surrounding major city centers or competitor strongholds often suffer from acute <strong>"Bid Inflation."</strong> When multiple competitors aggressively bid on the same keywords in the same high-density Zip Code, the Cost Per Click (CPC) skyrockets.
+                    </p>
+                    <p class="leading-loose">
+                        A sophisticated Radius Targeting strategy involves mapping out these high-cost "Red Oceans" and deliberately excluding them. Instead, you deploy radius pins on the suburban periphery—areas with high population density but significantly lower advertiser competition.
+                    </p>
+                    <p class="leading-loose font-medium text-slate-800">
+                        This is the "Blue Ocean" strategy: acquiring the same customer demographic for 40-60% lower acquisition costs simply by shifting the geographic battleground a few miles to the west or east.
+                    </p>
+                </div>
+                <div class="md:col-span-5 flex items-center justify-center">
+                    <div class="bg-white p-8 rounded-2xl shadow-xl w-full">
+                        <div class="flex justify-between items-center border-b border-gray-100 pb-4 mb-4">
+                            <span class="text-sm font-bold text-slate-400 uppercase">Auction Dynamics</span>
+                            <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded font-bold">Live Data</span>
+                        </div>
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex justify-between text-sm mb-2">
+                                    <span class="font-bold text-red-600">City Center (High Competition)</span>
+                                    <span class="text-slate-600">$12.50 CPC</span>
+                                </div>
+                                <div class="w-full bg-slate-100 rounded-full h-2">
+                                    <div class="bg-red-500 h-2 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm mb-2">
+                                    <span class="font-bold text-brand-accent">Suburban Radius (Blue Ocean)</span>
+                                    <span class="text-slate-600">$4.20 CPC</span>
+                                </div>
+                                <div class="w-full bg-slate-100 rounded-full h-2">
+                                    <div class="bg-brand-accent h-2 rounded-full" style="width: 35%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-6 text-center">
+                            By shifting geography, you bypass the bidding war entirely.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Use Cases -->
+        <section id="use-cases" class="scroll-mt-32">
+            <h2 class="text-4xl font-bold text-slate-900 mb-12 font-serif text-center">Strategic Industry Applications</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Case 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 hover:border-brand-accent/30 hover:shadow-xl transition-all duration-300 group">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-brand-accent group-hover:text-white transition"><i class="fa-solid fa-house-chimney"></i></div>
+                        <h3 class="font-bold text-lg text-slate-900">Real Estate & Investors</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Stop targeting the whole city. Leverage property data to isolate specific subdivisions characterized by high equity or vintage build dates (ideal for renovations). This ensures ad spend is not diluted on rental properties or low-value assets.
+                    </p>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 hover:border-brand-accent/30 hover:shadow-xl transition-all duration-300 group">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-brand-accent group-hover:text-white transition"><i class="fa-solid fa-mug-hot"></i></div>
+                        <h3 class="font-bold text-lg text-slate-900">Retail & Hospitality</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Use a strict 1-mile radius for "Morning Commute" advertisements. If a consumer is not within a 5-minute deviation of their route, conversion is statistically unlikely. Proximity is the ultimate convenience signal.
+                    </p>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 hover:border-brand-accent/30 hover:shadow-xl transition-all duration-300 group">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-brand-accent group-hover:text-white transition"><i class="fa-solid fa-hammer"></i></div>
+                        <h3 class="font-bold text-lg text-slate-900">HVAC & Roofing</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Deploy "Storm Chaser" strategies by utilizing radius targeting to drop pins immediately on hail-damaged neighborhoods. You can isolate the exact swath of damage, ignoring the unaffected parts of the zip code to maximize relevance.
+                    </p>
+                </div>
+
+                <!-- Case 4 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 hover:border-brand-accent/30 hover:shadow-xl transition-all duration-300 group">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-brand-accent group-hover:text-white transition"><i class="fa-solid fa-check-to-slot"></i></div>
+                        <h3 class="font-bold text-lg text-slate-900">Political Campaigns</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Maximize donor efficiency by targeting "Get Out The Vote" ads specifically to precincts that historically vote for your party. Skip opposition zones entirely to ensure budget is used only for mobilization, not persuasion.
+                    </p>
+                </div>
+
+                <!-- Case 5 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 hover:border-brand-accent/30 hover:shadow-xl transition-all duration-300 group">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-brand-accent group-hover:text-white transition"><i class="fa-solid fa-briefcase"></i></div>
+                        <h3 class="font-bold text-lg text-slate-900">Corporate Recruitment</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Execute aggressive talent acquisition by dropping a 1-mile radius pin on your competitor's headquarters or university engineering buildings. Serve employment ads directly to talent while they are at their current desks.
+                    </p>
+                </div>
+
+                <!-- Case 6 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 hover:border-brand-accent/30 hover:shadow-xl transition-all duration-300 group">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-brand-accent group-hover:text-white transition"><i class="fa-solid fa-calendar-days"></i></div>
+                        <h3 class="font-bold text-lg text-slate-900">Events & Conferences</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Utilize temporal geo-fencing to target convention centers only during the dates of a major trade show. This captures a high-value, transient audience on their mobile devices while they are in a "business mindset."
+                    </p>
+                </div>
+
+                <!-- Case 7 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 hover:border-brand-accent/30 hover:shadow-xl transition-all duration-300 group">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-brand-accent group-hover:text-white transition"><i class="fa-solid fa-car"></i></div>
+                        <h3 class="font-bold text-lg text-slate-900">Luxury Automotive</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Luxury is defined by exclusivity. By layering income data, you can restrict ads to neighborhoods where household income exceeds $250k. This eliminates wasted impressions on aspirational viewers who cannot afford the vehicle.
+                    </p>
+                </div>
+
+                <!-- Case 8 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 hover:border-brand-accent/30 hover:shadow-xl transition-all duration-300 group">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-brand-accent group-hover:text-white transition"><i class="fa-solid fa-dumbbell"></i></div>
+                        <h3 class="font-bold text-lg text-slate-900">Fitness Centers</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        For gyms, the churn rate is directly correlated to drive time. Target a strict 5-minute drive-time radius. Prospects living outside this radius typically churn within 90 days due to the friction of travel.
+                    </p>
+                </div>
+
+                <!-- Case 9 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 hover:border-brand-accent/30 hover:shadow-xl transition-all duration-300 group">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-brand-accent group-hover:text-white transition"><i class="fa-solid fa-building"></i></div>
+                        <h3 class="font-bold text-lg text-slate-900">B2B SaaS / Enterprise</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Adopt an Account-Based Marketing (ABM) stance by targeting specific downtown office blocks or "Tech Parks" where your ideal enterprise clients are headquartered, ensuring your B2B solution is seen by decision-makers.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 7: The Problem (Zip Codes) -->
+        <section class="scroll-mt-32 grid md:grid-cols-2 gap-16 items-center bg-slate-50 p-12 md:p-16 rounded-3xl">
+            <div>
+                <h2 class="text-3xl font-bold text-slate-900 mb-6 font-serif">The Fallacy of the Zip Code</h2>
+                <div class="prose prose-lg prose-slate text-slate-600">
+                    <p>
+                        Most marketers default to Zip Code targeting because it is the path of least resistance. However, it is vital to remember that Zip Codes were designed by the postal service for the efficient delivery of mail, not for the efficient delivery of marketing messages.
+                    </p>
+                    <p>
+                        A single Zip Code is an arbitrary administrative boundary that often encapsulates massive "dead zones"—state parks, lakes, industrial manufacturing districts, and farmland. When you target the entire region, you are paying to show ads to empty space.
+                    </p>
+                </div>
+                <div class="mt-8 bg-white border-l-4 border-red-500 p-6 rounded shadow-sm">
+                    <h4 class="font-bold text-red-700 mb-2 text-lg">The Cost of Imprecision</h4>
+                    <p class="text-slate-600">
+                        Audits of broad-targeted campaigns consistently reveal that <strong>30-40% of budget</strong> is wasted on "Empty Impressions" served in non-residential or irrelevant geographic sectors.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Graphic: Dead Zone -->
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-red-200 to-slate-200 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                <div class="relative bg-white p-8 rounded-xl shadow-xl border border-gray-100">
+                    <div class="aspect-video bg-slate-100 relative rounded-lg overflow-hidden border border-slate-200">
+                        <!-- Zip Code Boundary -->
+                        <div class="absolute inset-6 border-2 border-dashed border-red-300 bg-red-50/50 flex items-center justify-center">
+                            <span class="text-red-300 font-bold uppercase text-2xl rotate-45 opacity-20 select-none">Zip Code Boundary</span>
+                        </div>
+                        <!-- Dead Zone -->
+                        <div class="absolute top-0 right-0 w-1/2 h-full bg-slate-300/50 backdrop-blur-sm flex flex-col items-center justify-center text-center p-4 border-l border-white/50">
+                             <i class="fa-solid fa-ban text-slate-500 text-3xl mb-2"></i>
+                             <span class="text-sm font-bold text-slate-600">Industrial Park<br>(Wasted Spend)</span>
+                        </div>
+                        <!-- Good Zone -->
+                        <div class="absolute bottom-6 left-6 w-24 h-24 rounded-full border-2 border-green-500 bg-green-100/90 shadow-lg flex items-center justify-center text-center p-2 z-10 animate-pulse">
+                            <span class="text-xs text-green-800 font-bold leading-tight">High Value<br>Cluster</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Figure 1.1: Administrative vs. Strategic Targeting</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Implementation Guide -->
+        <section id="how-to" class="scroll-mt-32">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-4xl font-bold text-slate-900 mb-6 font-serif">Platform Implementation Protocols</h2>
+                <p class="text-xl text-slate-500 leading-relaxed">
+                    While the strategy is sophisticated, the execution on major platforms is accessible. Below are the standard operating procedures for manually configuring radius targeting on the two primary ad networks.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Google Ads -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="flex items-center gap-4 mb-8 pb-4 border-b border-slate-100">
+                        <i class="fa-brands fa-google text-3xl text-slate-700"></i>
+                        <h3 class="text-2xl font-bold text-slate-900">Google Ads Configuration</h3>
+                    </div>
+                    <ol class="space-y-6 relative border-l-2 border-slate-100 ml-3">
+                        <li class="pl-8 relative group">
+                            <span class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-white border-2 border-slate-300 group-hover:border-brand-accent transition"></span>
+                            <strong class="block text-slate-900 text-lg mb-1">Step 1: Campaign Settings</strong>
+                            <span class="text-slate-600 leading-relaxed">Navigate to your campaign settings and locate the 'Locations' dropdown menu. Select "Enter another location."</span>
+                        </li>
+                        <li class="pl-8 relative group">
+                            <span class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-white border-2 border-slate-300 group-hover:border-brand-accent transition"></span>
+                            <strong class="block text-slate-900 text-lg mb-1">Step 2: Advanced Interface</strong>
+                            <span class="text-slate-600 leading-relaxed">Click the blue <strong>Advanced Search</strong> link to open the map interface. This is where precise data entry occurs.</span>
+                        </li>
+                        <li class="pl-8 relative group">
+                            <span class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-white border-2 border-slate-300 group-hover:border-brand-accent transition"></span>
+                            <strong class="block text-slate-900 text-lg mb-1">Step 3: Coordinate Entry</strong>
+                            <span class="text-slate-600 leading-relaxed">Toggle the radio button from "Location" to <strong>"Radius"</strong>. Paste your precise latitude/longitude coordinates or street address.</span>
+                        </li>
+                        <li class="pl-8 relative group">
+                            <span class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-brand-accent border-2 border-brand-accent"></span>
+                            <strong class="block text-slate-900 text-lg mb-1">Step 4: Perimeter Definition</strong>
+                            <span class="text-slate-600 leading-relaxed">Set your radial distance (e.g., 1.0 mi) and click 'Save'. Repeat this process for every micro-cluster in your strategy.</span>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- Meta Ads -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="flex items-center gap-4 mb-8 pb-4 border-b border-slate-100">
+                        <i class="fa-brands fa-meta text-3xl text-blue-600"></i>
+                        <h3 class="text-2xl font-bold text-slate-900">Meta (Facebook) Configuration</h3>
+                    </div>
+                    <ol class="space-y-6 relative border-l-2 border-slate-100 ml-3">
+                        <li class="pl-8 relative group">
+                            <span class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-white border-2 border-slate-300 group-hover:border-blue-600 transition"></span>
+                            <strong class="block text-slate-900 text-lg mb-1">Step 1: Ad Set Level</strong>
+                            <span class="text-slate-600 leading-relaxed">Navigate to the Ad Set level of your campaign. Scroll down to the 'Audience' section.</span>
+                        </li>
+                        <li class="pl-8 relative group">
+                            <span class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-white border-2 border-slate-300 group-hover:border-blue-600 transition"></span>
+                            <strong class="block text-slate-900 text-lg mb-1">Step 2: Input Coordinates</strong>
+                            <span class="text-slate-600 leading-relaxed">In the location search bar, paste your coordinates or specific street address. Select the matching result.</span>
+                        </li>
+                        <li class="pl-8 relative group">
+                            <span class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-blue-600 border-2 border-blue-600"></span>
+                            <strong class="block text-slate-900 text-lg mb-1">Step 3: Adjust Granularity</strong>
+                            <span class="text-slate-600 leading-relaxed">By default, Meta may set a wide radius. Use the slider or text input to reduce this to the minimum (1 mile) to ensure tight clustering.</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <!-- The Plug / CTA Section -->
-    <section class="bg-white border-t border-gray-100 py-20 relative overflow-hidden">
-        <!-- Decorative bg -->
-        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-50"></div>
-        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-indigo-50 rounded-full blur-3xl opacity-50"></div>
-
-        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
-            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 font-serif">Ready to find your pockets?</h2>
-            <p class="text-slate-500 text-lg mb-10 leading-relaxed max-w-2xl mx-auto">
-                Don't waste time guessing coordinates. Use the AI tool that automatically identifies high-density clusters and pushes them to your Ads Manager.
+    <!-- The Solution / CTA Section -->
+    <section class="bg-slate-900 py-24 relative overflow-hidden">
+        <div class="absolute inset-0 pattern-grid opacity-5"></div>
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-accent rounded-full blur-[150px] opacity-10"></div>
+        
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <h2 class="text-4xl md:text-6xl font-bold text-white mb-8 font-serif">Automate Your Geospatial Strategy</h2>
+            <p class="text-slate-300 text-xl mb-12 leading-relaxed max-w-3xl mx-auto font-light">
+                Manual coordinate research is labor-intensive and prone to error. <br class="hidden md:block"><strong>RadiusTarget</strong> leverages artificial intelligence to scan demographic layers and generate optimized, upload-ready coordinate lists instantly.
             </p>
             
-            <div class="bg-gradient-to-br from-[#2563EB] to-[#1E40AF] text-white rounded-2xl p-2 md:p-10 shadow-2xl flex flex-col md:flex-row items-center gap-8 text-left ring-4 ring-blue-100">
-                <!-- Product Visual -->
-                <div class="w-full md:w-5/12 flex-shrink-0">
-                    <div class="aspect-[4/3] bg-white rounded-xl shadow-lg flex flex-col overflow-hidden group">
-                        <!-- Mock UI Header -->
-                        <div class="h-8 bg-slate-100 border-b border-gray-200 flex items-center px-3 space-x-2">
-                            <div class="w-2 h-2 rounded-full bg-red-400"></div>
-                            <div class="w-2 h-2 rounded-full bg-yellow-400"></div>
-                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
-                        </div>
-                        <!-- Mock UI Body -->
-                        <div class="flex-1 bg-slate-50 p-4 relative">
-                            <div class="absolute inset-0 opacity-20 pattern-grid"></div>
-                            <div class="absolute top-1/4 left-1/4 w-12 h-12 bg-blue-500/30 rounded-full border border-blue-600 animate-ping"></div>
-                            <div class="absolute top-1/4 left-1/4 w-12 h-12 bg-blue-500/30 rounded-full border border-blue-600"></div>
-                            <div class="absolute bottom-1/3 right-1/4 w-16 h-16 bg-teal-500/30 rounded-full border border-teal-600 animate-pulse delay-75"></div>
-                            <div class="absolute bottom-4 left-0 right-0 text-center">
-                                <span class="bg-white text-slate-800 text-[10px] font-bold px-2 py-1 rounded shadow">Analyzing Demographics...</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Pitch -->
-                <div>
-                    <div class="inline-block bg-white/20 px-2 py-1 rounded text-[10px] font-bold uppercase tracking-wider mb-3">The Tool for the Job</div>
-                    <h3 class="text-2xl font-bold text-white mb-2">RadiusTarget<span class="text-blue-200">.com</span></h3>
-                    <p class="text-blue-100 mb-6 text-sm leading-relaxed">
-                        Define your audience lifestyle, and let our AI generate the precise radius sets to reach them. Compatible with Google Ads & Meta Ads.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="https://radiustarget.com" class="inline-flex justify-center items-center px-6 py-3 bg-white hover:bg-gray-50 text-blue-700 font-bold rounded-lg transition shadow-md whitespace-nowrap">
-                            Try RadiusTarget
-                            <i class="fa-solid fa-arrow-right ml-2"></i>
-                        </a>
-                        <a href="https://radiustarget.com" class="inline-flex justify-center items-center px-6 py-3 border border-blue-400 hover:bg-blue-800 text-white font-semibold rounded-lg transition whitespace-nowrap">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="https://radiustarget.com" class="inline-flex justify-center items-center px-10 py-5 bg-brand-accent hover:bg-teal-600 text-white font-bold rounded-xl transition-all duration-300 shadow-[0_0_30px_rgba(13,148,136,0.3)] text-lg hover:-translate-y-1">
+                    Launch RadiusTarget
+                    <i class="fa-solid fa-location-crosshairs ml-3"></i>
+                </a>
+                <a href="https://radiustarget.com" class="inline-flex justify-center items-center px-10 py-5 border border-slate-600 hover:border-white text-white font-medium rounded-xl transition-all duration-300 hover:bg-white/5">
+                    View Strategic Demo
+                </a>
             </div>
+            <p class="mt-8 text-sm text-slate-500 uppercase tracking-widest">Seamless Integration with Google Ads & Meta Ads</p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 py-12 border-t border-slate-800">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <div class="font-bold text-lg text-white mb-4 font-serif">
-                RadiusTargeting<span class="text-brand-accent">.com</span>
+    <footer class="bg-slate-950 pt-20 pb-10 border-t border-slate-900 text-slate-400">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-2">
+                <div class="font-bold text-2xl text-white mb-6 font-serif flex items-center gap-2">
+                    <i class="fa-solid fa-layer-group text-brand-accent"></i>
+                    RadiusTargeting<span class="text-brand-accent">.com</span>
+                </div>
+                <p class="text-slate-500 text-base leading-relaxed max-w-md">
+                    The premier educational resource for advanced geospatial advertising strategies. We empower forward-thinking marketers to eliminate waste and dominate local markets through precision targeting.
+                </p>
             </div>
-            <p class="text-gray-400 text-sm mb-8 max-w-lg mx-auto">
-                The leading educational resource for AI-driven location advertising and radius marketing strategies. Powered by <a href="https://radiustarget.com" class="text-brand-accent hover:underline">RadiusTarget</a>.
-            </p>
-            <div class="text-xs text-gray-600">
-                &copy; 2026 RadiusTarget Inc. All rights reserved.
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Strategic Resources</h4>
+                <ul class="space-y-4 text-sm">
+                    <li><a href="#" class="hover:text-brand-accent transition">Google Ads Methodology</a></li>
+                    <li><a href="#" class="hover:text-brand-accent transition">Meta Geo-fencing Guide</a></li>
+                    <li><a href="#" class="hover:text-brand-accent transition">Micro-Clustering Blueprints</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Platform</h4>
+                <ul class="space-y-4 text-sm">
+                    <li><a href="https://radiustarget.com" class="hover:text-brand-accent transition">RadiusTarget Intelligence</a></li>
+                    <li><a href="#" class="hover:text-brand-accent transition">Coordinate Converter Tool</a></li>
+                    <li><a href="#" class="hover:text-brand-accent transition">Enterprise Solutions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 pt-10 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-xs text-slate-600">
+                &copy; 2025 RadiusTarget Inc. All rights reserved. Strategic Geospatial Intelligence.
+            </div>
+            <div class="flex gap-6 text-slate-600">
+                <a href="#" class="hover:text-white transition transform hover:scale-110"><i class="fa-brands fa-x-twitter text-lg"></i></a>
+                <a href="#" class="hover:text-white transition transform hover:scale-110"><i class="fa-brands fa-linkedin text-lg"></i></a>
             </div>
         </div>
     </footer>
